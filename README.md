@@ -35,10 +35,15 @@ Inspired by the iOS calculator, this project combines clean design with smooth a
    ```bash
    git clone https://github.com/yourusername/Calculator.git
    cd Calculator
+   ttkbootstrap>=1.10.1
+
 
    python -m venv .venv
 source .venv/bin/activate   # On Linux/Mac
 .venv\Scripts\activate      # On Windows
+
+--
+
 Calculator/
 │── main.py              # UI and app logic
 │── calculator_logic.py  # Core calculation engine
@@ -46,3 +51,8 @@ Calculator/
 │── README.md            # Project documentation
 
 
+## 🧠 How It Works
+
+- Expressions are parsed using Python's `ast` module for safe evaluation.
+- Buttons animate using `ttkbootstrap` styles and reset to original color.
+- History is stored in memory and displayed in a toggleable panel.
